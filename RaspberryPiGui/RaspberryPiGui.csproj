@@ -2,6 +2,9 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
+    <PublishAot>true</PublishAot>
+    <IsAotCompatible>true</IsAotCompatible>
+    <StripSymbols>true</StripSymbols>
   </PropertyGroup>
 
   
