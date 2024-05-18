@@ -8,7 +8,6 @@
     <RuntimeIdentifier>linux-arm64</RuntimeIdentifier>
     <OutputType>Exe</OutputType>
     <PublishAot>true</PublishAot>
-    <StripSymbols>true</StripSymbols>
   </PropertyGroup>
 
   <ItemGroup>
