@@ -4,11 +4,22 @@
     <Nullable>enable</Nullable>
     <PublishAot>true</PublishAot>
     <IsAotCompatible>true</IsAotCompatible>
+    <TrimMode>copyused</TrimMode>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    <InvariantGlobalization>true</InvariantGlobalization>
   </PropertyGroup>
 
   
   <ItemGroup>
     <AvaloniaResource Include="Assets\**" />
+  </ItemGroup>
+
+ 
+  <ItemGroup>
+    <!-- see cref: https://github.com/AvaloniaUI/Avalonia/issues/5593 -->
+    <TrimmerRootDescriptor Include="../.ReflectionDefine\Avalonia.xml" />
+    <TrimmableAssembly Include="Avalonia.Themes.Fluent" />
+    <TrimmableAssembly Include="Avalonia.Themes.Default" />
   </ItemGroup>
 
   <ItemGroup>

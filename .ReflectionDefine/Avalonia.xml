@@ -1,0 +1,8 @@
+﻿<linker>
+  <!-- see cref: https://github.com/lixinyang123/AvaloniaAOT -->
+  <!-- App -->
+  <assembly fullname="RaspberryPiGui" preserve="All" />
+  <assembly fullname="RaspberryPiGui.Linux" preserve="All" />
+  <!-- Avalonia Themes -->
+  <assembly fullname="Avalonia.Themes.Fluent" preserve="All" />
+</linker>
